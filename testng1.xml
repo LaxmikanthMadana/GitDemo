@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="URL" value ="google.com"/>
+  <test thread-count="5" name="Test1">
+  <parameter name = "userName" value = "Laxmikanth"/>
+  <parameter name = "password" value = "Sai"/>
+  <!--<groups>-->
+  <!--<run>-->
+  <!--	<include name = "smoke"/>-->
+  <!--</run>-->
+ <!-- </groups>-->
+    <classes>
+      <class name="Basics.FrameworkBasics"/>
+      <class name="Basics.Test26NOV"/>
+      <class name="Basics.Basics2"/>
+      <class name="Basics.TestNGBasics"/>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite -->
